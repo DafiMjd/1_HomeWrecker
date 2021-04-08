@@ -8,25 +8,22 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import org.w3c.dom.Text;
-
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 
-public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.MyViewHolder>{
+public class TugasAdapter extends RecyclerView.Adapter<TugasAdapter.TugasViewHolder>{
     private ArrayList<Tugas> listTugas;
 
-    public RecyclerAdapter(ArrayList<Tugas> listTugas) {
+    public TugasAdapter(ArrayList<Tugas> listTugas) {
         this.listTugas = listTugas;
     }
 
-    public class MyViewHolder extends  RecyclerView.ViewHolder{
+    public class TugasViewHolder extends  RecyclerView.ViewHolder{
         private TextView matkulTxt;
         private TextView tugasTxt;
         private TextView dateTxt;
         private TextView timeTxt;
 
-        public MyViewHolder(final View view) {
+        public TugasViewHolder(final View view) {
             super(view);
             matkulTxt = view.findViewById(R.id.matkulTxt);
             tugasTxt = view.findViewById(R.id.tugasTxt);
@@ -37,13 +34,14 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.MyView
 
     @NonNull
     @Override
-    public RecyclerAdapter.MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.users_tasks, parent, false);
-        return new MyViewHolder(itemView);
+    public TugasAdapter.TugasViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        LayoutInflater inflater = LayoutInflater.from(parent.getContext());
+        View itemView = inflater.inflate(R.layout.users_tasks, parent, false);
+        return new TugasViewHolder(itemView);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull RecyclerAdapter.MyViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull TugasAdapter.TugasViewHolder holder, int position) {
         String matkul = listTugas.get(position).getMatkul();
         String tugas = listTugas.get(position).getTugas();
         String dueDate = listTugas.get(position).getDueDate();
@@ -59,4 +57,5 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.MyView
     public int getItemCount() {
         return listTugas.size();
     }
+
 }

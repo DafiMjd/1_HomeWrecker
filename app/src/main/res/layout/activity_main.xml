@@ -5,18 +5,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/hr_red_body"
+    android:orientation="horizontal"
     tools:context=".MainActivity">
 
     <include layout="@layout/header"/>
     <include layout="@layout/footer"/>
 
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/tugasRecycleView"
+    <FrameLayout
+        android:id="@+id/container"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@+id/header"
-        tools:layout_editor_absoluteX="168dp"/>
+        android:layout_height="572dp"
+        android:layout_marginTop="60dp" />
+
+
 
 
 </RelativeLayout>

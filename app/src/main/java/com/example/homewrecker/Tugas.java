@@ -33,4 +33,13 @@ public class Tugas {
         return dueTime;
     }
 
+    public void setTugas(String tugas) { this.tugas = tugas; }
+
+    public void setMatkul(String matkul) { this.matkul = matkul; }
+
+    public void setDescription(String description) { this.description = description; }
+
+    public void setDueDate(String dueDate) { this.dueDate = dueDate; }
+
+    public void setDueTime(String dueTime) { this.dueTime = dueTime; }
 }

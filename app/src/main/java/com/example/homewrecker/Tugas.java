@@ -1,28 +1,26 @@
 package com.example.homewrecker;
 
-import java.util.Date;
 
 public class Tugas {
-    private String tugas;
+    final boolean DONE = true;
+    final boolean NOT_DONE = false;
+
+    private String name;
     private String description;
-    private String matkul;
     private String dueDate;
     private String dueTime;
+    private boolean condition;
 
-    public Tugas(String matkul, String tugas, String description, String dueDate, String dueTime) {
-        this.matkul = matkul;
-        this.tugas = tugas;
+    public Tugas(String name, String description, String dueDate, String dueTime) {
+        this.name = name;
         this.description = description;
         this.dueDate = dueDate;
         this.dueTime = dueTime;
+        this.condition = NOT_DONE;
     }
 
-    public String getTugas() {
-        return tugas;
-    }
-
-    public String getMatkul() {
-        return matkul;
+    public String getName() {
+        return name;
     }
 
     public String getDueDate() {
@@ -33,13 +31,15 @@ public class Tugas {
         return dueTime;
     }
 
-    public void setTugas(String tugas) { this.tugas = tugas; }
+    public String getDescription() {
+        return description;
+    }
 
-    public void setMatkul(String matkul) { this.matkul = matkul; }
+    public boolean getCondition() {
+        return condition;
+    }
 
-    public void setDescription(String description) { this.description = description; }
-
-    public void setDueDate(String dueDate) { this.dueDate = dueDate; }
-
-    public void setDueTime(String dueTime) { this.dueTime = dueTime; }
+    public void setCondition(boolean condition) {
+        this.condition = condition;
+    }
 }

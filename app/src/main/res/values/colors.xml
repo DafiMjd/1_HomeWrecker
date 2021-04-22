@@ -10,4 +10,5 @@
     <color name="hr_red_header">#FB4747</color>
     <color name="hr_red_body">#FFD2D2</color>
     <color name="hr_statusbar">#E24E4E</color>
+    <color name="hr_cardview">#DEAAAA</color>
 </resources>

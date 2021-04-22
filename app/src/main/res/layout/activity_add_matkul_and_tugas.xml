@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/hr_red_body"
+    android:layout_alignParentEnd="true"
+    android:layout_alignParentBottom="true"
+    tools:context=".AddMatkulAndTugasActivity">
+
+<!--        <include layout="@layout/header"/>-->
+<!--        <include layout="@layout/footer"/>-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@android:color/holo_red_dark"
+            android:gravity="center"
+            android:padding="7dp">
+
+                <ImageButton
+                    android:id="@+id/backButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_back_button"
+                    android:background="@android:color/holo_red_dark"
+                    android:layout_marginEnd="350dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add Task / Matkul"
+                    android:layout_marginStart="40dp"
+                    android:textSize="18sp"
+                    android:fontFamily="sans-serif-condensed-medium"/>
+
+
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/containerAdd"
+            android:layout_width="match_parent"
+            android:layout_height="490dp"
+            android:layout_marginTop="60dp" />
+
+        <Button
+            android:id="@+id/tambahMatkulButton"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="640dp"
+            android:text="TAMBAH MATKUL"
+            android:background="@android:color/holo_red_dark"/>
+
+        <Button
+            android:id="@+id/tambahTugasButton"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="212dp"
+            android:layout_marginTop="640dp"
+            android:background="@android:color/holo_red_dark"
+            android:text="TAMBAH TUGAS" />
+
+</RelativeLayout>

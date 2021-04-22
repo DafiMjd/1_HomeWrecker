@@ -11,9 +11,9 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 
 public class TugasAdapter extends RecyclerView.Adapter<TugasAdapter.TugasViewHolder>{
-    private ArrayList<Tugas> listTugas;
+    private ArrayList<TugasDatabase> listTugas;
 
-    public TugasAdapter(ArrayList<Tugas> listTugas) {
+    public TugasAdapter(ArrayList<TugasDatabase> listTugas) {
         this.listTugas = listTugas;
     }
 
@@ -42,8 +42,9 @@ public class TugasAdapter extends RecyclerView.Adapter<TugasAdapter.TugasViewHol
 
     @Override
     public void onBindViewHolder(@NonNull TugasAdapter.TugasViewHolder holder, int position) {
-        String matkul = listTugas.get(position).getMatkul();
-        String tugas = listTugas.get(position).getTugas();
+
+        String matkul = listTugas.get(position).getMatkulShortName();
+        String tugas = listTugas.get(position).getTugasName();
         String dueDate = listTugas.get(position).getDueDate();
         String dueTime = listTugas.get(position).getDueTime();
 

@@ -14,10 +14,6 @@
     <FrameLayout
         android:id="@+id/container"
         android:layout_width="match_parent"
-        android:layout_height="572dp"
-        android:layout_marginTop="60dp" />
-
-
-
-
+        android:layout_height="600dp"
+        android:layout_marginTop="60dp"/>
 </RelativeLayout>

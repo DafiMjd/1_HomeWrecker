@@ -59,4 +59,8 @@ public class AddTugasFragment extends Fragment {
 
         return view;
     }
+
+    public void onClick (View view) {
+
+    }
 }

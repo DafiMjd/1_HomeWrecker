@@ -44,9 +44,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="330dp"
-            android:layout_marginTop="10dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:layout_marginTop="10dp"/>
 
         <TextView
             android:id="@+id/detailsTxt"
@@ -56,6 +54,15 @@
             android:layout_marginTop="70dp"
             android:layout_marginBottom="10dp"
             android:text="click for details" />
+
+        <TextView
+            android:id="@+id/priorityTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="330dp"
+            android:layout_marginTop="45dp"
+            android:text="1"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
 
     </androidx.cardview.widget.CardView>
 

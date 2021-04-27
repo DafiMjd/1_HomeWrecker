@@ -59,4 +59,9 @@ public class TugasAdapter extends RecyclerView.Adapter<TugasAdapter.TugasViewHol
         return listTugas.size();
     }
 
+    public void setTugas(ArrayList<TugasDatabase> tugasDatabases) {
+        this.listTugas = tugasDatabases;
+        notifyDataSetChanged();
+    }
+
 }

@@ -59,7 +59,5 @@ public class AddMatkulFragment extends Fragment {
         else{
             Toast.makeText(getActivity().getApplicationContext(), "Belum Menginput data",Toast.LENGTH_SHORT).show();
         }
-
-
     }
 }
